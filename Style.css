@@ -5,6 +5,8 @@
   --tri: #eeeeee;
 }
 * {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--tri);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +38,7 @@ main {
   gap: 1rem;
 }
 .search input {
-  color: var(--tri);
+  color: black;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--tri);
@@ -47,9 +49,51 @@ main {
   outline: none;
 }
 .search button {
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   border: 0;
   padding: 0.5rem;
   font-size: 1.2rem;
-  background-color: var(--tri);
+  cursor: pointer;
+}
+.search button img {
+  width: 1.2rem;
+}
+.WeatherStatusContainer {
+  /* line-height: 2rem; */
+  text-align: center;
+}
+#Temp {
+  font-size: 4rem;
+}
+#City {
+  font-size: 3rem;
+}
+.Details {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  align-items: center;
+}
+.WeatherHumidityContainer,
+.WeatherWindContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+.WeatherHumidityContainer img,
+.WeatherWindContainer img {
+  width: 1.8rem;
+}
+.error p {
+  display: none;
+  color: red;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem;
+}
+.WeatherStatusContainer{
+  display: none;
 }

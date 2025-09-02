@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="weather_container">
         <div class="search">
-          <input type="text" placeholder="Enter the city " spellcheck="true" />
-          <button><i class="ri-search-line"></i></button>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Enter the city "
+            spellcheck="true"
+          />
+          <button id="searchBtn">
+            <img src="weather-app-img/images/search.png" alt="" />
+          </button>
         </div>
-        
+        <div class="error">
+          <p>Invalid City Name</p>
+        </div>
+        <div class="WeatherStatusContainer">
+          <img src="weather-app-img/images/mist.png" alt="" />
+          <h2 id="Temp">22°C</h2>
+          <h2 id="City">New York</h2>
+
+          <div class="Details">
+            <div class="WeatherHumidityContainer">
+              <img src="weather-app-img/images/wind.png" alt="" />
+              <div class="HumidityDetails">
+                <h3 id="humidity">64%</h3>
+                <h3>Humidity</h3>
+              </div>
+            </div>
+
+            <div class="WeatherWindContainer">
+              <img src="weather-app-img/images/humidity.png" alt="" />
+
+              <div class="WindDetails">
+                <h3 id="wind">18 km/h</h3>
+                <h3>Wind Speed</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="script.js"></script>
