@@ -95,5 +95,14 @@ main {
   margin: 0.5rem 0.5rem;
 }
 .WeatherStatusContainer{
+  /* display: none; */
+}
+#fail{
   display: none;
+  font-size: 5rem;
+  text-transform: capitalize;
+  top: 55%;
+  position: absolute;
+  z-index: 1;
+  color: black;
 }
