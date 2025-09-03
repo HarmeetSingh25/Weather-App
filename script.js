@@ -30,7 +30,7 @@ async function WeatherApiCaller(city) {
 
     let p = document.querySelector("#fail ");
     p.style.display = `block`;
-    p.textContent = "404 Error Found ";
+    p.textContent = "Error Found ";
   }
 }
 
